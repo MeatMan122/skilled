@@ -1,6 +1,0 @@
-interface:
-  display_name: "Marketplace Maintainer"
-  short_description: "Maintain Claude Code and Codex skill marketplaces."
-  default_prompt: "Use this skill to add, update, validate, or publish skills in this marketplace."
-policy:
-  allow_implicit_invocation: true

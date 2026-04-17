@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Cross-compatible Agent Skills for Claude Code and OpenAI Codex.",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "plugins": [
     {
       "name": "shared-skills",
       "source": "./plugins/shared-skills",
       "description": "A bundle of shared Agent Skills that can run in Claude Code and Codex.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "author": {
         "name": "Skilled contributors"
       },

@@ -16,5 +16,20 @@ When adding or changing skills:
    - `.claude-plugin/marketplace.json`
    - `.agents/plugins/marketplace.json`
 8. Run `npm run validate` before finishing.
+9. If Claude Code is available, also run `claude plugin validate .`.
 
-Prefer small, focused skills. Treat bundled scripts as code that users install on their machine, and keep them auditable.
+Surface notes:
+
+- Claude Code marketplace repositories must expose `.claude-plugin/marketplace.json`; plugin skills are bundled under the plugin's `skills/` directory.
+- Codex marketplace repositories must expose `.agents/plugins/marketplace.json`; plugin bundles need `.codex-plugin/plugin.json`.
+- Codex marketplace entries must include `policy.installation`, `policy.authentication`, and `category`.
+- Direct Codex skill installs copy `plugins/shared-skills/skills/*` into `~/.agents/skills`.
+- README install commands should use the final GitHub `OWNER/REPO` before release.
+
+Release checks:
+
+- Bump both plugin manifest versions whenever published skill contents change.
+- Verify install instructions for Claude Code, Codex marketplace installs, and direct Codex skill-copy installs.
+- Prefer small, focused skills.
+- Treat bundled scripts as code that users install on their machine, and keep them auditable.
+- Avoid hidden network calls, destructive file operations, and global package installation in skill scripts.

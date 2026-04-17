@@ -1,6 +1,6 @@
 {
   "name": "shared-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A bundle of shared Agent Skills that can run in Claude Code and Codex.",
   "author": {
     "name": "Skilled contributors"

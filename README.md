@@ -18,7 +18,6 @@ This repository is structured so it can be used in three ways:
 |   |-- .codex-plugin/plugin.json           # Codex plugin manifest
 |   |-- .claude-plugin/plugin.json          # Claude Code plugin manifest
 |   `-- skills/
-|       |-- marketplace-maintainer/
 |       |-- surface-churn/
 |       `-- trace-value-debugging/
 `-- scripts/
@@ -77,7 +76,6 @@ The install scripts copy `plugins/shared-skills/skills/*` to `~/.agents/skills`,
 
 ## Current Skills
 
-- `marketplace-maintainer`: Maintain and validate this dual marketplace layout.
 - `surface-churn`: Surface assumptions, constraints, and friction when agent work starts looping.
 - `trace-value-debugging`: Debug runtime behavior with bounded value traces and rate-limited diagnostics.
 

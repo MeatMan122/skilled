@@ -1,6 +1,6 @@
 {
   "name": "shared-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A bundle of shared Agent Skills that can run in Claude Code and Codex.",
   "author": {
     "name": "Skilled contributors",
@@ -28,7 +28,6 @@
     ],
     "websiteURL": "https://github.com/OWNER/REPO",
     "defaultPrompt": [
-      "Use the marketplace-maintainer skill to add a new skill to this marketplace.",
       "Use the trace-value-debugging skill to debug a runtime value mismatch with bounded traces.",
       "Use the surface-churn skill to identify why a task is generating repeated rework."
     ],
