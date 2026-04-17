@@ -1,0 +1,6 @@
+interface:
+  display_name: "Trace Value Debugging"
+  short_description: "Debug with bounded runtime traces"
+  default_prompt: "Use this skill to prove or disprove runtime assumptions by tracing actual values across small function boundaries with bounded diagnostics."
+policy:
+  allow_implicit_invocation: true

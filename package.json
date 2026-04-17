@@ -1,0 +1,11 @@
+{
+  "name": "skilled",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Dual Claude Code and Codex Agent Skills marketplace scaffold.",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-marketplace.mjs"
+  },
+  "license": "MIT"
+}

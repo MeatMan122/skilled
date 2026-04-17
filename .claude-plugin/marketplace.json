@@ -1,0 +1,31 @@
+{
+  "name": "skilled",
+  "owner": {
+    "name": "Skilled contributors"
+  },
+  "metadata": {
+    "description": "Cross-compatible Agent Skills for Claude Code and OpenAI Codex.",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "shared-skills",
+      "source": "./plugins/shared-skills",
+      "description": "A bundle of shared Agent Skills that can run in Claude Code and Codex.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Skilled contributors"
+      },
+      "homepage": "https://github.com/OWNER/REPO",
+      "repository": "https://github.com/OWNER/REPO",
+      "license": "MIT",
+      "keywords": [
+        "agent-skills",
+        "claude-code",
+        "codex",
+        "marketplace"
+      ],
+      "category": "productivity"
+    }
+  ]
+}

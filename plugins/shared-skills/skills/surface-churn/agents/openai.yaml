@@ -1,0 +1,6 @@
+interface:
+  display_name: "Surface Churn"
+  short_description: "Expose assumptions and unblock rework"
+  default_prompt: "Use this skill to identify where this task is generating friction, quote the user evidence, state assumptions and constraints, and recommend the best next action."
+policy:
+  allow_implicit_invocation: true

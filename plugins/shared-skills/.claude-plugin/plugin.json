@@ -1,0 +1,19 @@
+{
+  "name": "shared-skills",
+  "version": "0.2.0",
+  "description": "A bundle of shared Agent Skills that can run in Claude Code and Codex.",
+  "author": {
+    "name": "Skilled contributors"
+  },
+  "homepage": "https://github.com/OWNER/REPO",
+  "repository": "https://github.com/OWNER/REPO",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "marketplace"
+  ],
+  "category": "productivity",
+  "skills": "./skills/"
+}

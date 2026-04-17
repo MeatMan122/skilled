@@ -1,0 +1,37 @@
+{
+  "name": "shared-skills",
+  "version": "0.2.0",
+  "description": "A bundle of shared Agent Skills that can run in Claude Code and Codex.",
+  "author": {
+    "name": "Skilled contributors",
+    "url": "https://github.com/OWNER/REPO"
+  },
+  "homepage": "https://github.com/OWNER/REPO",
+  "repository": "https://github.com/OWNER/REPO",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "marketplace"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Shared Skills",
+    "shortDescription": "Cross-compatible skills for Claude Code and Codex.",
+    "longDescription": "Install this bundle to use shared Agent Skills in OpenAI Codex. The same SKILL.md folders are also packaged for Claude Code.",
+    "developerName": "Skilled contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/OWNER/REPO",
+    "defaultPrompt": [
+      "Use the marketplace-maintainer skill to add a new skill to this marketplace.",
+      "Use the trace-value-debugging skill to debug a runtime value mismatch with bounded traces.",
+      "Use the surface-churn skill to identify why a task is generating repeated rework."
+    ],
+    "brandColor": "#10A37F"
+  }
+}
