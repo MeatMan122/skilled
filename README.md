@@ -19,7 +19,8 @@ This repository is structured so it can be used in three ways:
 |   |-- .claude-plugin/plugin.json          # Claude Code plugin manifest
 |   `-- skills/
 |       |-- surface-churn/
-|       `-- trace-value-debugging/
+|       |-- trace-value-debugging/
+|       `-- worktree-protocol/
 `-- scripts/
     |-- install-codex-skills.ps1
     |-- install-codex-skills.sh
@@ -31,7 +32,7 @@ This repository is structured so it can be used in three ways:
 After publishing this repository to GitHub, users can add it as a Claude Code marketplace:
 
 ```text
-/plugin marketplace add OWNER/REPO
+/plugin marketplace add MeatMan122/skilled
 /plugin install shared-skills@skilled
 ```
 
@@ -49,7 +50,7 @@ Claude Code expects a repository marketplace to contain `.claude-plugin/marketpl
 Codex can add this repository as a plugin marketplace:
 
 ```bash
-codex marketplace add OWNER/REPO
+codex marketplace add MeatMan122/skilled
 ```
 
 For local testing before publishing:
@@ -78,6 +79,13 @@ The install scripts copy `plugins/shared-skills/skills/*` to `~/.agents/skills`,
 
 - `surface-churn`: Surface assumptions, constraints, and friction when agent work starts looping.
 - `trace-value-debugging`: Debug runtime behavior with bounded value traces and rate-limited diagnostics.
+- `worktree-protocol`: Implement safely in reusable isolated Git worktrees and hand off local review branches.
+
+### Worktree Protocol
+
+`worktree-protocol` provides isolated implementation slots, task-owned local review branches, safe connected follow-ups, scoped verification, and process/dirty-state safeguards. It is portable across repositories and computers: resolve the primary checkout and project-specific tooling before using it. Bash examples work in Git Bash on Windows; PowerShell users should adapt the shell syntax.
+
+After installing or updating the shared-skills bundle, invoke `$worktree-protocol` in Codex or ask Claude Code to use the `worktree-protocol` skill. The raw folder can also be copied to a project’s `.agents/skills/worktree-protocol/` rather than installed globally. It includes no external scripts or source-project dependencies.
 
 ## Add A Skill
 
@@ -127,7 +135,7 @@ This scaffold follows current official docs:
 
 ## Publish Checklist
 
-- Replace `OWNER/REPO` placeholders in plugin manifests with the real repository URL.
+- Keep repository links and installation commands pointed at `MeatMan122/skilled`.
 - Set the publisher name, website, privacy policy, and terms URLs if the marketplace is public.
 - Tag releases and bump plugin versions before announcing updates.
 - Keep skills auditable: avoid hidden network calls, unexpected file writes, or dependency installation in skill scripts.

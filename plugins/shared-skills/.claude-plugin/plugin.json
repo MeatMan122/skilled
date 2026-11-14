@@ -1,12 +1,12 @@
 {
   "name": "shared-skills",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A bundle of shared Agent Skills that can run in Claude Code and Codex.",
   "author": {
     "name": "Skilled contributors"
   },
-  "homepage": "https://github.com/OWNER/REPO",
-  "repository": "https://github.com/OWNER/REPO",
+  "homepage": "https://github.com/MeatMan122/skilled",
+  "repository": "https://github.com/MeatMan122/skilled",
   "license": "MIT",
   "keywords": [
     "agent-skills",

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Worktree Protocol"
+  short_description: "Isolated worktrees with review branches"
+  default_prompt: "Use $worktree-protocol to implement this in an isolated worktree and publish a review branch."
